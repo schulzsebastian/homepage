@@ -3,10 +3,29 @@
   <head>
     <title>Flask</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.4/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.4/jquery.fullPage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
   </head>
   <body>
-    Hello!
+    <div id="fullpage">
+      <div class="section">
+        <h1>SEBASTIAN SCHULZ</h1>
+        <h4>Python & GIS Developer</h4>
+      </div>
+      <div class="section">
+        Skills
+      </div>
+      <div class="section">
+        Interests
+      </div>
+      <div class="section">
+        Contact
+      </div>
+    </div>
   </body>
 </html>
