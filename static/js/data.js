@@ -16,7 +16,7 @@ var pythonSkills = [
   },
   {
     id: 4,
-    name: 'PyQGIS, ArcPy, Pyproj, Shapely',
+    name: 'GIS libraries (PyQGIS, ArcPy, Pyproj, Shapely)',
     level: 0.6
   },
   {
@@ -34,4 +34,50 @@ var pythonSkills = [
     name: 'Django',
     level: 0.2
   }
+]
+
+var jsSkills = [
+  {
+    id: 1,
+    name: 'Leaflet',
+    level: 0.8
+  },
+  {
+    id: 2,
+    name: 'Knockout',
+    level:  0.75
+  },
+  {
+    id: 3,
+    name: 'jQuery',
+    level: 0.7
+  },
+  {
+    id: 4,
+    name: 'Cordova',
+    level: 0.3
+  },
+  {
+    id: 5,
+    name: 'Vue',
+    level: 0.2
+  }
+]
+
+var dbSkills = [
+  {
+    id: 1,
+    name: 'PostgreSQL',
+    level: 0.8
+  },
+  {
+    id: 2,
+    name: 'SQLite',
+    level:  0.75
+  },
+  {
+    id: 3,
+    name: 'Redis',
+    level: 0.2
+  },
 ]
