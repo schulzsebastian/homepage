@@ -23,14 +23,7 @@
         <div class="container">
           <div class="row">
           <h3>Python</h3>
-            <table>
-              <tbody>
-                <tr id="python-list" v-for="skill in skills">
-                  <td v-text="skill.name"></td>
-                  <td><div :id="'python-list-'+skill.id"></div></td>
-                </tr>
-              </tbody>
-            </table>
+            <skills-list :lang="pythonPrefix" :items="python"></skills-list>
           </div>
         </div>
       </div>
@@ -42,51 +35,19 @@
       </div>
     </div>
   </body>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/components.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/data.js') }}"></script>
   <script>
-  var pythonList = {
-    el: '#python-list',
+  var vm = new Vue({
+    el: "#fullpage",
     data: {
-      skills : [
-        {
-          id: 1,
-          name: 'PEP8',
-          level: 0.8
-        },
-        {
-          id: 2,
-          name: 'Flask',
-          level:  0.75
-        },
-        {
-          id: 3,
-          name: 'Peewee',
-          level: 0.7
-        },
-        {
-          id: 4,
-          name: 'PyQGIS, ArcPy, Pyproj, Shapely',
-          level: 0.6
-        },
-        {
-          id: 5,
-          name: 'SQLAlchemy',
-          level: 0.5
-        },
-        {
-          id: 6,
-          name: 'PyQT',
-          level: 0.3
-        },
-        {
-          id: 7,
-          name: 'Django',
-          level: 0.2
-        }
-      ]
+      python: pythonSkills,
+      pythonPrefix: 'py'
     },
-    compiled: function(){
-      this.skills.forEach(function(skill){
-        var bar = new ProgressBar.Line('#python-list-'+skill.id, {
+    ready: function(){
+      var self = this;
+      self.python.forEach(function(python){
+        var bar = new ProgressBar.Line('#'+self.pythonPrefix+python.id, {
           strokeWidth: 4,
           easing: 'easeInOut',
           duration: 5000,
@@ -95,13 +56,9 @@
           trailWidth: 1,
           svgStyle: {width: '100%', height: '100%'}
         })
-        bar.animate(skill.level)
+        bar.animate(python.level)
       })
     }
-  }
-
-  var app = new Vue({
-    mixins: [pythonList]
   })
   </script>
 </html>
