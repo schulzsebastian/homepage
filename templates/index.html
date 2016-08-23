@@ -22,11 +22,12 @@
       <div class="section">
         <div class="container">
           <div class="row">
+          <h3>Python</h3>
             <table>
               <tbody>
                 <tr id="python-list" v-for="skill in skills">
                   <td v-text="skill.name"></td>
-                  <td><div :id="skill.name.slice(0,4)"></div></td>
+                  <td><div :id="'python-list-'+skill.id"></div></td>
                 </tr>
               </tbody>
             </table>
@@ -42,35 +43,42 @@
     </div>
   </body>
   <script>
-  var pythonList = new Vue({
+  var pythonList = {
     el: '#python-list',
     data: {
       skills : [
         {
-          name: 'Flask',
-          level:  0.8
-        },
-        {
-          name: 'PyQGIS, ArcPy, Pyproj, Shapely',
-          level: 0.75
-        },
-        {
-          name: 'SQLAlchemy',
-          level: 0.7
-        },
-        {
-          name: 'Peewee',
+          id: 1,
+          name: 'PEP8',
           level: 0.8
         },
         {
-          name: 'PEP8',
-          level: 0.9
+          id: 2,
+          name: 'Flask',
+          level:  0.75
         },
         {
+          id: 3,
+          name: 'Peewee',
+          level: 0.7
+        },
+        {
+          id: 4,
+          name: 'PyQGIS, ArcPy, Pyproj, Shapely',
+          level: 0.6
+        },
+        {
+          id: 5,
+          name: 'SQLAlchemy',
+          level: 0.5
+        },
+        {
+          id: 6,
           name: 'PyQT',
           level: 0.3
         },
         {
+          id: 7,
           name: 'Django',
           level: 0.2
         }
@@ -78,10 +86,10 @@
     },
     compiled: function(){
       this.skills.forEach(function(skill){
-        var bar = new ProgressBar.Line('#'+skill.name.slice(0,4), {
+        var bar = new ProgressBar.Line('#python-list-'+skill.id, {
           strokeWidth: 4,
           easing: 'easeInOut',
-          duration: 3000,
+          duration: 5000,
           color: '#333',
           trailColor: '#eee',
           trailWidth: 1,
@@ -90,6 +98,10 @@
         bar.animate(skill.level)
       })
     }
+  }
+
+  var app = new Vue({
+    mixins: [pythonList]
   })
   </script>
 </html>
