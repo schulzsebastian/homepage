@@ -6,19 +6,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.4/jquery.fullPage.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.4/jquery.fullPage.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
   </head>
   <body>
     <div id="fullpage">
-      <div class="section">
+      <div class="section active">
         <h1>SEBASTIAN SCHULZ</h1>
-        <h4>Python & GIS Developer</h4>
+        <h5>Python & GIS Developer</h5>
       </div>
       <div class="section">
-        Skills
+        <div class="container">
+          <div class="row">
+            <table>
+              <tbody>
+                <tr id="python-list" v-for="skill in skills">
+                  <td v-text="skill.name"></td>
+                  <td><div :id="skill.name.slice(0,4)"></div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
       <div class="section">
         Interests
@@ -28,4 +41,55 @@
       </div>
     </div>
   </body>
+  <script>
+  var pythonList = new Vue({
+    el: '#python-list',
+    data: {
+      skills : [
+        {
+          name: 'Flask',
+          level:  0.8
+        },
+        {
+          name: 'PyQGIS, ArcPy, Pyproj, Shapely',
+          level: 0.75
+        },
+        {
+          name: 'SQLAlchemy',
+          level: 0.7
+        },
+        {
+          name: 'Peewee',
+          level: 0.8
+        },
+        {
+          name: 'PEP8',
+          level: 0.9
+        },
+        {
+          name: 'PyQT',
+          level: 0.3
+        },
+        {
+          name: 'Django',
+          level: 0.2
+        }
+      ]
+    },
+    compiled: function(){
+      this.skills.forEach(function(skill){
+        var bar = new ProgressBar.Line('#'+skill.name.slice(0,4), {
+          strokeWidth: 4,
+          easing: 'easeInOut',
+          duration: 3000,
+          color: '#333',
+          trailColor: '#eee',
+          trailWidth: 1,
+          svgStyle: {width: '100%', height: '100%'}
+        })
+        bar.animate(skill.level)
+      })
+    }
+  })
+  </script>
 </html>
