@@ -1,11 +1,11 @@
-.section {
+.centerize {
   text-align:center;
 }
 .fp-tooltip {
   color: black !important;
 }
 svg {
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 #map {
   position: relative;
