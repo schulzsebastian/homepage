@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.4/jquery.fullPage.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-rc.3/leaflet.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.4/jquery.fullPage.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-    <script type="text/javascript" src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.0-rc.3/leaflet.js"></script>
   </head>
   <body>
     <div id="fullpage">
@@ -44,7 +45,10 @@
         </div>
       </div>
       <div class="section">
-        Interests
+        <h5>I like to travel</h5>
+        <div class="container">
+          <div id="map"></div>
+        </div>
       </div>
       <div class="section">
         Contact
@@ -53,19 +57,6 @@
   </body>
   <script type="text/javascript" src="{{ url_for('static', filename='js/components.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='js/data.js') }}"></script>
-  <script>
-  var vm = new Vue({
-    el: "#fullpage",
-    data: {
-      python: pythonSkills,
-      pythonPrefix: 'py',
-      js: jsSkills,
-      jsPrefix: 'js',
-      db: dbSkills,
-      dbPrefix: 'db',
-      other: otherSkills,
-      otherPrefix: 'other'
-    }
-  })
-  </script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/map.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
 </html>

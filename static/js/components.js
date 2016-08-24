@@ -17,13 +17,13 @@ Vue.component('skills-list', {
     var self = this;
     self.items.forEach(function(skill){
       var bar = new ProgressBar.Line('#'+self.lang+skill.id, {
-        strokeWidth: 2,
+        strokeWidth: 3,
         easing: 'easeInOut',
         duration: 5000,
         color: '#333',
         trailColor: '#eee',
         trailWidth: 1,
-        svgStyle: {width: '100%', height: '100%'}
+        svgStyle: {width: '100%', height: '50%'}
       })
       bar.animate(skill.level)
     })
