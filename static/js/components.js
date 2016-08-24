@@ -17,7 +17,7 @@ Vue.component('skills-list', {
     var self = this;
     self.items.forEach(function(skill){
       var bar = new ProgressBar.Line('#'+self.lang+skill.id, {
-        strokeWidth: 4,
+        strokeWidth: 2,
         easing: 'easeInOut',
         duration: 5000,
         color: '#333',

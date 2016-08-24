@@ -11,28 +11,28 @@ var pythonSkills = [
   },
   {
     id: 3,
-    name: 'Peewee',
+    name: 'Peewee, SQLAlchemy',
     level: 0.7
   },
   {
     id: 4,
-    name: 'GIS libraries (PyQGIS, ArcPy, Pyproj, Shapely)',
+    name: 'PyQGIS, ArcPy',
     level: 0.6
   },
   {
     id: 5,
-    name: 'SQLAlchemy',
-    level: 0.5
+    name: 'Pyproj, Shapely',
+    level: 0.6
   },
   {
     id: 6,
-    name: 'PyQT',
-    level: 0.3
+    name: 'Django',
+    level: 0.2
   },
   {
     id: 7,
-    name: 'Django',
-    level: 0.2
+    name: 'PyQT',
+    level: 0.1
   }
 ]
 
@@ -79,5 +79,33 @@ var dbSkills = [
     id: 3,
     name: 'Redis',
     level: 0.2
+  },
+]
+
+var otherSkills = [
+  {
+    id: 1,
+    name: 'QGIS, ArcGIS',
+    level: 0.7
+  },
+  {
+    id: 2,
+    name: 'Git, Mercurial',
+    level:  0.6
+  },
+  {
+    id: 3,
+    name: 'HTML5, CSS3',
+    level: 0.6
+  },
+  {
+    id: 4,
+    name: 'Bootstrap, Materialize',
+    level: 0.6
+  },
+  {
+    id: 5,
+    name: 'nginx, uWSGI',
+    level: 0.3
   },
 ]

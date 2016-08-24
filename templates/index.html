@@ -22,12 +22,24 @@
       <div class="section">
         <div class="container">
           <div class="row">
-          <h5>Python</h5>
-          <skills-list :lang="pythonPrefix" :items="python"></skills-list>
-          <h5>Javascript</h5>
-          <skills-list :lang="jsPrefix" :items="js"></skills-list>
-          <h5>Databases</h5>
-          <skills-list :lang="dbPrefix" :items="db"></skills-list>
+            <div class="col s6">
+              <h5>Python</h5>
+              <skills-list :lang="pythonPrefix" :items="python"></skills-list>
+            </div>
+            <div class="col s6">
+              <h5>Javascript</h5>
+              <skills-list :lang="jsPrefix" :items="js"></skills-list>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6">
+              <h5>Databases</h5>
+              <skills-list :lang="dbPrefix" :items="db"></skills-list>
+            </div>
+            <div class="col s6">
+              <h5>Other</h5>
+              <skills-list :lang="otherPrefix" :items="other"></skills-list>
+            </div>
           </div>
         </div>
       </div>
@@ -50,7 +62,9 @@
       js: jsSkills,
       jsPrefix: 'js',
       db: dbSkills,
-      dbPrefix: 'db'
+      dbPrefix: 'db',
+      other: otherSkills,
+      otherPrefix: 'other'
     }
   })
   </script>
