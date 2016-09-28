@@ -9,13 +9,17 @@
 { "type": "Feature", "properties": { "Name": "Fes Airport" }, "geometry": { "type": "Point", "coordinates": [ -4.980048, 33.929725, 0.0 ] } },
 { "type": "Feature", "properties": { "Name": "Kopitnari Airport" }, "geometry": { "type": "Point", "coordinates": [ 42.4825, 42.176389, 0.0 ] } },
 { "type": "Feature", "properties": { "Name": "Baku Airport" }, "geometry": { "type": "Point", "coordinates": [ 50.05219, 40.465229, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Brussels-Charleroi Airport" }, "geometry": { "type": "Point", "coordinates": [ 4.46497, 50.46422, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Brussels-Charleroi Airport" }, "geometry": { "type": "Point", "coordinates": [ 4.464975, 50.46422, 0.0 ] } },
 { "type": "Feature", "properties": { "Name": "Malaga Airport" }, "geometry": { "type": "Point", "coordinates": [ -4.482306, 36.668979, 0.0 ] } },
 { "type": "Feature", "properties": { "Name": "Berlin-Schonefeld Airport" }, "geometry": { "type": "Point", "coordinates": [ 13.521615, 52.385441, 0.0 ] } },
 { "type": "Feature", "properties": { "Name": "Budapest Airport" }, "geometry": { "type": "Point", "coordinates": [ 19.252296, 47.438459, 0.0 ] } },
 { "type": "Feature", "properties": { "Name": "TehranAirport" }, "geometry": { "type": "Point", "coordinates": [ 51.155019400000015, 35.4091387, 0.0 ] } },
 { "type": "Feature", "properties": { "Name": "Shiraz Airport" }, "geometry": { "type": "Point", "coordinates": [ 52.58997, 29.54613, 0.0 ] } },
 { "type": "Feature", "properties": { "Name": "Lviv Airport" }, "geometry": { "type": "Point", "coordinates": [ 23.959909899999957, 49.8131299, 0.0 ] } },
-{ "type": "Feature", "properties": { "Name": "Istanbul-Sabiha Gokcen Airport" }, "geometry": { "type": "Point", "coordinates": [ 29.31686030000003, 40.905371, 0.0 ] } }
+{ "type": "Feature", "properties": { "Name": "Istanbul-Sabiha Gokcen Airport" }, "geometry": { "type": "Point", "coordinates": [ 29.31686030000003, 40.905371, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Port lotniczy Nowa Ad-Dauha" }, "geometry": { "type": "Point", "coordinates": [ 51.614203, 25.2598878, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "KL International Airport" }, "geometry": { "type": "Point", "coordinates": [ 101.704312, 2.754525, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Port lotniczy Singapur-Changi" }, "geometry": { "type": "Point", "coordinates": [ 103.991530799999964, 1.3644202, 0.0 ] } },
+{ "type": "Feature", "properties": { "Name": "Port lotniczy Denpasar" }, "geometry": { "type": "Point", "coordinates": [ 115.166787, -8.7467172, 0.0 ] } }
 ]
 }
