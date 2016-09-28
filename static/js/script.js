@@ -15,7 +15,14 @@ $(document).ready(function() {
       db: dbSkills,
       dbPrefix: 'db',
       other: otherSkills,
-      otherPrefix: 'other'
+      otherPrefix: 'other',
+      header1: 'SEBASTIAN SCHULZ',
+      header2: 'Python & GIS Developer',
+      h1: 'Python',
+      h2: 'Javascript',
+      h3: 'Databases',
+      h4: 'Other',
+      ilike: 'I like to travel'
     }
   })
   var map = L.map('map').setView([52.482780222078226, 18.676757812500004], 3);

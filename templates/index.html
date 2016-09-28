@@ -18,35 +18,35 @@
   <body>
     <div id="fullpage">
       <div class="section centerize">
-        <h1>SEBASTIAN SCHULZ</h1>
-        <h5>Python & GIS Developer</h5>
+        <h1 v-text="header1"></h1>
+        <h5 v-text="header2"></h5>
       </div>
       <div class="section">
         <div class="container">
           <div class="row">
             <div class="col s6">
-              <h5>Python</h5><br>
+              <h5 v-text="h1"></h5><br>
               <skills-list :lang="pythonPrefix" :items="python"></skills-list>
             </div>
             <div class="col s6">
-              <h5>Javascript</h5><br>
+              <h5 v-text="h2"></h5><br>
               <skills-list :lang="jsPrefix" :items="js"></skills-list>
             </div>
           </div>
           <div class="row">
             <div class="col s6">
-              <h5>Databases</h5><br>
+              <h5 v-text="h3"></h5><br>
               <skills-list :lang="dbPrefix" :items="db"></skills-list>
             </div>
             <div class="col s6">
-              <h5>Other</h5><br>
+              <h5 v-text="h4"></h5><br>
               <skills-list :lang="otherPrefix" :items="other"></skills-list>
             </div>
           </div>
         </div>
       </div>
       <div class="section">
-        <h5 class="centerize">I like to travel</h5>
+        <h5 class="centerize" v-text="ilike"></h5>
         <div class="container">
           <div id="map"></div>
         </div>
