@@ -2,36 +2,36 @@ var pythonSkills = [
   {
     id: 1,
     name: 'PEP8',
-    level: 0.8
+    level: 0.7
   },
   {
     id: 2,
     name: 'Flask',
-    level:  0.75
+    level:  0.65
   },
   {
     id: 3,
     name: 'Peewee, SQLAlchemy',
-    level: 0.7
+    level: 0.6
   },
   {
     id: 4,
     name: 'PyQGIS, ArcPy',
-    level: 0.6
+    level: 0.5
   },
   {
     id: 5,
     name: 'Pyproj, Shapely',
-    level: 0.6
+    level: 0.5
   },
   {
     id: 6,
-    name: 'Django',
+    name: 'PyQT',
     level: 0.2
   },
   {
     id: 7,
-    name: 'PyQT',
+    name: 'Django',
     level: 0.1
   }
 ]
@@ -40,22 +40,22 @@ var jsSkills = [
   {
     id: 1,
     name: 'Leaflet',
-    level: 0.8
+    level: 0.7
   },
   {
     id: 2,
     name: 'Knockout',
-    level:  0.75
+    level:  0.65
   },
   {
     id: 3,
     name: 'jQuery',
-    level: 0.7
+    level: 0.6
   },
   {
     id: 4,
     name: 'Cordova',
-    level: 0.3
+    level: 0.2
   },
   {
     id: 5,
@@ -68,12 +68,12 @@ var dbSkills = [
   {
     id: 1,
     name: 'PostgreSQL',
-    level: 0.8
+    level: 0.7
   },
   {
     id: 2,
     name: 'SQLite',
-    level:  0.75
+    level:  0.65
   },
   {
     id: 3,
@@ -96,16 +96,16 @@ var otherSkills = [
   {
     id: 3,
     name: 'HTML5, CSS3',
-    level: 0.6
+    level: 0.5
   },
   {
     id: 4,
     name: 'Bootstrap, Materialize',
-    level: 0.6
+    level: 0.5
   },
   {
     id: 5,
     name: 'nginx, uWSGI',
-    level: 0.3
+    level: 0.2
   },
 ]
