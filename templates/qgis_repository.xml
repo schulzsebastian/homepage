@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<plugins>
+    <pyqgis_plugin name="Spreadsheet" version="0.1" plugin_id="1">
+        <description><![CDATA[Plugin for loading spreadsheet data]]></description>
+        <about></about>
+        <version>0.1</version>
+        <qgis_minimum_version>2.0.0</qgis_minimum_version>
+        <qgis_maximum_version>2.99.0</qgis_maximum_version>
+        <homepage><![CDATA[https://github.com/schulzsebastian/qgisplugin_spreadsheet]]></homepage>
+        <file_name>qgisplugin_spreadsheet.zip</file_name>
+        <author_name><![CDATA[Sebastian Schulz]]></author_name>
+        <download_url>https://schulzsebastian.com/qgisplugin_spreadsheet</download_url>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker><![CDATA[https://github.com/schulzsebastian/qgisplugin_spreadsheet/issues]]></tracker>
+        <repository><![CDATA[https://github.com/schulzsebastian/qgisplugin_spreadsheet]]></repository>
+    </pyqgis_plugin>
+</plugins>
